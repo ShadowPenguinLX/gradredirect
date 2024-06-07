@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Redirecting to Venmo</title>
-  <script>
-    // Redirect to Venmo link
-    window.location.href = "venmo://paycharge?txn=pay&recipients=maclolm&amount=5&note=This%20is%20going%20towards%20a%20good%20cause";
-  </script>
+  <title>Redirect to Venmo</title>
 </head>
 <body>
-  <p>If you are not redirected, please <a href="venmo://paycharge?txn=pay&recipients=maclolm&amount=5&note=This%20is%20going%20towards%20a%20good%20cause">click here</a>.</p>
+  <button onclick="redirectToVenmo()">Pay with Venmo</button>
+
+  <script>
+    function redirectToVenmo() {
+      // Redirect to Venmo link
+      window.location.href = "venmo://paycharge?txn=pay&recipients=maclolm&amount=5&note=This%20is%20going%20towards%20a%20good%20cause";
+    }
+  </script>
 </body>
 </html>
